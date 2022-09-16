@@ -1,0 +1,19 @@
+
+$overlay-color : rgba(0, 0, 0, 0.603);
+
+.landing {
+    background-image: url("../../assets/images/landing.jpg");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $overlay-color ;
+    }
+}

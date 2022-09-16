@@ -1,0 +1,188 @@
+
+@import "parts/header" ;
+@import "parts/landing" ;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+// *******************************************************************
+
+// Start basic design 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+}
+
+// End basic design 
+
+// *******************************************************************
+// *******************************************************************
+
+// Start responsive class
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.j-c-b {
+    justify-content: space-between;
+}
+
+.fs-14 {
+    font-size: 0.875rem;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+// End responsive class
+
+// *******************************************************************
+
+// Start Media query responsive 
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .container {
+        width: 546px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .container {
+        width: 738px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .container {
+        width: 962px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .container {
+        width: 1170px;
+    }
+}
+
+// End Media query responsive 
+
+// *******************************************************************
+
+// start flex grid system
+
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+@media (max-width: 575.98px) { 
+    .col-1  { flex-basis:   8.33% }
+    .col-2  { flex-basis:  16.66% }
+    .col-3  { flex-basis:  25%    }
+    .col-4  { flex-basis:  33.33% }
+    .col-5  { flex-basis:  41.66% }
+    .col-6  { flex-basis:  50%    }
+    .col-7  { flex-basis:  58.33% }
+    .col-8  { flex-basis:  66.66% }
+    .col-9  { flex-basis:  75%    }
+    .col-10 { flex-basis:  83.33% }
+    .col-11 { flex-basis:  91.66% }
+    .col-12 { flex-basis: 100%    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .col-sm-1  { flex-basis:   8.33% }
+    .col-sm-2  { flex-basis:  16.66% }
+    .col-sm-3  { flex-basis:  25%    }
+    .col-sm-4  { flex-basis:  33.33% }
+    .col-sm-5  { flex-basis:  41.66% }
+    .col-sm-6  { flex-basis:  50%    }
+    .col-sm-7  { flex-basis:  58.33% }
+    .col-sm-8  { flex-basis:  66.66% }
+    .col-sm-9  { flex-basis:  75%    }
+    .col-sm-10 { flex-basis:  83.33% }
+    .col-sm-11 { flex-basis:  91.66% }
+    .col-sm-12 { flex-basis: 100%    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .col-md-1  { flex-basis:   8.33% }
+    .col-md-2  { flex-basis:  16.66% }
+    .col-md-3  { flex-basis:  25%    }
+    .col-md-4  { flex-basis:  33.33% }
+    .col-md-5  { flex-basis:  41.66% }
+    .col-md-6  { flex-basis:  50%    }
+    .col-md-7  { flex-basis:  58.33% }
+    .col-md-8  { flex-basis:  66.66% }
+    .col-md-9  { flex-basis:  75%    }
+    .col-md-10 { flex-basis:  83.33% }
+    .col-md-11 { flex-basis:  91.66% }
+    .col-md-12 { flex-basis: 100%    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .col-lg-1  { flex-basis:   8.33% }
+    .col-lg-2  { flex-basis:  16.66% }
+    .col-lg-3  { flex-basis:  25%    }
+    .col-lg-4  { flex-basis:  33.33% }
+    .col-lg-5  { flex-basis:  41.66% }
+    .col-lg-6  { flex-basis:  50%    }
+    .col-lg-7  { flex-basis:  58.33% }
+    .col-lg-8  { flex-basis:  66.66% }
+    .col-lg-9  { flex-basis:  75%    }
+    .col-lg-10 { flex-basis:  83.33% }
+    .col-lg-11 { flex-basis:  91.66% }
+    .col-lg-12 { flex-basis: 100%    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .col-xl-1  { flex-basis:   8.33% }
+    .col-xl-2  { flex-basis:  16.66% }
+    .col-xl-3  { flex-basis:  25%    }
+    .col-xl-4  { flex-basis:  33.33% }
+    .col-xl-5  { flex-basis:  41.66% }
+    .col-xl-6  { flex-basis:  50%    }
+    .col-xl-7  { flex-basis:  58.33% }
+    .col-xl-8  { flex-basis:  66.66% }
+    .col-xl-9  { flex-basis:  75%    }
+    .col-xl-10 { flex-basis:  83.33% }
+    .col-xl-11 { flex-basis:  91.66% }
+    .col-xl-12 { flex-basis: 100%    }  
+}
+
+// End flex grid system
+
+// *******************************************************************
+// *******************************************************************
+// *******************************************************************
