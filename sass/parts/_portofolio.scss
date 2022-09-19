@@ -1,0 +1,137 @@
+
+$white : #fff;
+$active-color: #19c8fa;
+$dark-blue: #009eca5e;
+
+.portofolio {
+    padding: 6.25rem 0;
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            padding: 0.625rem;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &.active {
+                background-color:$active-color;
+                color: $white;
+                font-weight: bold;
+            }
+
+            &:hover:not(.active) {
+                background-color: $dark-blue;
+                color: $white;
+            }
+        }
+    }
+
+    .image-boxes {
+        margin-top: 3.75rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        .box {
+            flex-basis:25%;
+            position: relative;
+            overflow: hidden;
+
+            @media (max-width: 501.98px) { 
+                flex-basis: 100%;
+            }
+
+            @media (min-width:502px) and (max-width:767.98px ) {
+                flex-basis: 50%;
+            }
+
+            @media (min-width: 768px) and (max-width: 1199.98px) { 
+                flex-basis: calc(100% / 3);
+            }
+
+            img {
+                transition: 0.3s;
+            }
+
+            .caption {
+                background-color:$white;
+                padding: 1.25rem;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: -100%;
+                transition: 0.3s;
+
+
+                h4 {
+                    margin-bottom: 0.625rem;
+                    font-weight: normal;
+                }
+                p{
+                    color:$active-color;
+                }
+            }
+
+            &:hover img {
+                transform: rotate(3deg) scale(1.1);
+            }
+            &:hover .caption {
+                bottom: 0;
+            }
+        }
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin: 1.875rem auto;
+        position: relative;
+
+        button {
+            padding: 0.5rem 1rem;
+            background-color: $active-color;
+            color: $white;
+            font-weight: 600;
+            border: $active-color;
+            border-radius: 5px;
+            cursor: pointer;
+            // position: relative;
+
+
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     top: 0;
+            //     left: -200%;
+            //     border-radius: 5px;
+            //     width: 200%;
+            //     height: 100%;
+            //     background-color: pink;
+
+            }
+        }
+
+    }
+
+
+// // Extra small devices (portrait phones, less than 576px)
+// @media (max-width: 575.98px) { 
+
+// }
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) and (max-width: 767.98px) { 
+    
+// }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) and (max-width: 1199.98px) { 
+
+// }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { 
+    
+// }

@@ -1,0 +1,27 @@
+
+
+
+.about {
+    padding: 6.25rem 0;
+    overflow: hidden;
+
+    .header-topic {
+        p {
+            margin-bottom: 5px !important;
+        }
+    }
+
+    .image-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 500px;
+        img {
+            position: relative;
+            bottom: -100px;
+            width: 100%;
+        }
+
+    }
+}
