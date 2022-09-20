@@ -1,0 +1,154 @@
+
+$light-gray : #777;
+$light-gray-two : rgba(119, 119, 119, 0.289);
+$active : #19c8fa;
+$black: #000;
+$white : #fff;
+
+.testomonial {
+
+    padding: 6.25rem 0;
+
+    .testo-header {
+        text-align: center;
+        h3 {
+            font-weight: normal;
+            margin-bottom: 1.875rem;
+        }
+        p{
+            color: $light-gray;
+            margin-bottom: 3.75rem;
+            line-height: 1.7;
+        }
+    }
+
+    .reviews {
+        .review {
+
+            display: flex;
+            margin-bottom: 1.875rem;
+            flex-wrap: nowrap;
+
+            .img {
+                margin-right: 3.125rem;
+
+                img {
+                width: 6.25rem;
+                height: 6.25rem;
+                border-radius: 50%;
+                }
+            }
+
+            .text {
+                border-bottom: 1px solid $light-gray-two;
+
+                p {
+                    line-height: 1.6;
+                }
+
+                .author {
+                    color: $light-gray;
+                    text-align: end;
+                    margin-bottom: 0.625rem
+                }
+            }
+        } 
+    }
+
+    .scroll-icon {
+        display: flex;
+        justify-content: center;
+        margin: 3.125rem 0;
+        div {
+            margin-right: 0.625rem;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1px solid $light-gray-two;
+        }
+        .active {
+            background-color: $active;
+        }
+    }
+
+    .progressbars {
+
+        .progress-content {
+            margin-bottom: 2.5rem;
+            h4 {
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+
+            .progress {
+
+                height: 20px;
+                width: 100%;
+                background-color: $light-gray-two;
+
+                .bar1 , .bar4 {
+                    width: 90%;
+                }
+                .bar2 {
+                    width: 85%;
+                }
+                .bar3 {
+                    width: 80%;
+                }
+
+                .bar {
+                    height: inherit;
+                    
+                    background-color: $active;
+                    position: relative;
+
+                    &::before {
+                        content: attr(data-progress);
+                        position: absolute;
+                        background-color: $black ;
+                        width: 40px;
+                        text-align: center;
+                        padding: 4px 0;
+                        border-radius: 4px;
+                        color: $white;
+                        top: -35px;
+                        right: -20px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        border: 6px solid transparent;
+                        border-top-color: $black;
+                        top: -9px;
+                        right: -7px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+// // Extra small devices (portrait phones, less than 576px)
+// @media (max-width: 575.98px) { 
+
+// }
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) and (max-width: 767.98px) { 
+    
+// }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) and (max-width: 1199.98px) { 
+
+// }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { 
+    
+// }

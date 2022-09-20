@@ -243,8 +243,11 @@ header .header-content .links .search-icon svg {
 .our-design .image {
   z-index: 1;
   padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 .our-design .image img {
+  flex-basis: 50%;
   position: relative;
   bottom: -15rem;
 }
@@ -449,21 +452,152 @@ header .header-content .links .search-icon svg {
 .about {
   padding: 6.25rem 0;
   overflow: hidden;
+  text-align: center;
 }
-.about .header-topic p {
-  margin-bottom: 5px !important;
+.about img {
+  position: relative;
+  bottom: -220px;
+  margin-top: -250px;
+  max-width: 100%;
 }
-.about .image-about {
+
+.stats {
+  padding: 6.25rem 0;
+  background-image: url(../../assets/images/stats.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -2;
+}
+.stats::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+.stats .box {
+  background-color: rgba(15, 116, 143, 0.7019607843);
+  padding: 3.125em;
+  color: #fff;
+  text-align: center;
+}
+.stats .box svg {
+  margin: 0 4.531em 1.875em;
+  height: 25px;
+  width: 25px;
+}
+.stats .box .number {
+  margin-bottom: 1.25em;
+  font-size: 3.125em;
+  font-weight: 500;
+}
+.stats .box p {
+  font-size: 0.875em;
+}
+
+.testomonial {
+  padding: 6.25rem 0;
+}
+.testomonial .testo-header {
+  text-align: center;
+}
+.testomonial .testo-header h3 {
+  font-weight: normal;
+  margin-bottom: 1.875rem;
+}
+.testomonial .testo-header p {
+  color: #777;
+  margin-bottom: 3.75rem;
+  line-height: 1.7;
+}
+.testomonial .reviews .review {
+  display: flex;
+  margin-bottom: 1.875rem;
+  flex-wrap: nowrap;
+}
+.testomonial .reviews .review .img {
+  margin-right: 3.125rem;
+}
+.testomonial .reviews .review .img img {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+}
+.testomonial .reviews .review .text {
+  border-bottom: 1px solid rgba(119, 119, 119, 0.289);
+}
+.testomonial .reviews .review .text p {
+  line-height: 1.6;
+}
+.testomonial .reviews .review .text .author {
+  color: #777;
+  text-align: end;
+  margin-bottom: 0.625rem;
+}
+.testomonial .scroll-icon {
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 500px;
+  margin: 3.125rem 0;
 }
-.about .image-about img {
-  position: relative;
-  bottom: -100px;
+.testomonial .scroll-icon div {
+  margin-right: 0.625rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(119, 119, 119, 0.289);
+}
+.testomonial .scroll-icon .active {
+  background-color: #19c8fa;
+}
+.testomonial .progressbars .progress-content {
+  margin-bottom: 2.5rem;
+}
+.testomonial .progressbars .progress-content h4 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.testomonial .progressbars .progress-content .progress {
+  height: 20px;
   width: 100%;
+  background-color: rgba(119, 119, 119, 0.289);
+}
+.testomonial .progressbars .progress-content .progress .bar1, .testomonial .progressbars .progress-content .progress .bar4 {
+  width: 90%;
+}
+.testomonial .progressbars .progress-content .progress .bar2 {
+  width: 85%;
+}
+.testomonial .progressbars .progress-content .progress .bar3 {
+  width: 80%;
+}
+.testomonial .progressbars .progress-content .progress .bar {
+  height: inherit;
+  background-color: #19c8fa;
+  position: relative;
+}
+.testomonial .progressbars .progress-content .progress .bar::before {
+  content: attr(data-progress);
+  position: absolute;
+  background-color: #000;
+  width: 40px;
+  text-align: center;
+  padding: 4px 0;
+  border-radius: 4px;
+  color: #fff;
+  top: -35px;
+  right: -20px;
+}
+.testomonial .progressbars .progress-content .progress .bar::after {
+  content: "";
+  position: absolute;
+  border: 6px solid transparent;
+  border-top-color: #000;
+  top: -9px;
+  right: -7px;
 }
 
 * {
@@ -476,15 +610,14 @@ body {
   font-family: "Open Sans", sans-serif;
   max-width: 100vw;
   overflow-x: hidden;
-  height: 5000px;
 }
 
 .header-topic {
   text-align: center;
 }
 .header-topic h2 {
-  font-size: 40px;
-  margin-bottom: 70px;
+  font-size: 2.5rem;
+  margin-bottom: 4.375rem;
   text-transform: uppercase;
   color: #000;
   font-weight: normal;

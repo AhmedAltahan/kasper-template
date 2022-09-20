@@ -27,8 +27,11 @@ $light-blue : #0f748fb3;
     .image {
         z-index: 1;
         padding: 10px;
+        display: flex;
+        justify-content: center;
 
         img {
+            flex-basis: 50%;
             position: relative;
             bottom: -15rem;
         }
@@ -40,7 +43,6 @@ $light-blue : #0f748fb3;
         .text {
             padding: 3.125rem;
             background-color: $light-blue;
-            // width: 100%;
             
             h2 {
                 color : $light ;
