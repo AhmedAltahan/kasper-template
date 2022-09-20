@@ -9,7 +9,13 @@ $white : #fff;
 
     padding: 6.25rem 0;
 
+    .flex-row {
+        gap: 80px;
+        flex-wrap: nowrap;
+    }
+
     .testo-header {
+        
         text-align: center;
         h3 {
             font-weight: normal;
@@ -23,11 +29,13 @@ $white : #fff;
     }
 
     .reviews {
+        
         .review {
 
             display: flex;
             margin-bottom: 1.875rem;
             flex-wrap: nowrap;
+            
 
             .img {
                 margin-right: 3.125rem;
@@ -129,6 +137,7 @@ $white : #fff;
     }
 
 }
+
 
 
 
