@@ -737,6 +737,72 @@ header .header-content .links .search-icon svg {
 }
 
 /* End Pricing */
+.subscripe-section {
+  background-image: url(../../assets/images/subscribe.jpg);
+  background-size: cover;
+  padding: 100px 0;
+  color: white;
+  position: relative;
+  z-index: -2;
+}
+.subscripe-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.subscripe-section .package {
+  display: flex;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  justify-content: center;
+}
+.subscripe-section .package svg {
+  position: absolute;
+  top: 50%;
+  left: 69px;
+  transform: translateY(-50%);
+}
+.subscripe-section .package input[type=email] {
+  padding: 20px 20px 20px 60px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-right: none;
+}
+.subscripe-section .package input[type=email]::-moz-placeholder {
+  color: white;
+}
+.subscripe-section .package input[type=email]:-ms-input-placeholder {
+  color: white;
+}
+.subscripe-section .package input[type=email]::placeholder {
+  color: white;
+}
+.subscripe-section .package input[type=submit] {
+  border: 1px solid white;
+  padding: 10px 20px;
+  color: white;
+  background-color: #19c8fa;
+  border-left: none;
+}
+.subscripe-section .text {
+  width: 100%;
+  margin-top: 30px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.contact {
+  width: 100vh;
+  height: 150px;
+  background-color: pink;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -745,7 +811,6 @@ header .header-content .links .search-icon svg {
 
 body {
   font-family: "Open Sans", sans-serif;
-  max-width: 100vw;
   overflow-x: hidden;
 }
 
@@ -779,7 +844,7 @@ body {
   border-radius: 50%;
   bottom: -40px;
   left: 50%;
-  background-color: #fff;
+  background-color: white;
   transform: translateX(-50%);
 }
 .header-topic p {
